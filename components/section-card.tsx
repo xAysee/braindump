@@ -37,14 +37,14 @@ function SectionTitle({ title }: { title: string }) {
   const prefix = "I need to"
   if (title.startsWith(prefix)) {
     return (
-      <h2 className="font-serif text-lg font-medium leading-tight text-card-foreground">
+      <h2 className="font-serif text-lg font-bold leading-tight text-card-foreground">
         <span className="font-normal text-muted-foreground">{prefix}</span>
         {title.slice(prefix.length)}
       </h2>
     )
   }
   return (
-    <h2 className="font-serif text-lg font-medium leading-tight text-card-foreground">{title}</h2>
+    <h2 className="font-serif text-lg font-bold leading-tight text-card-foreground">{title}</h2>
   )
 }
 
